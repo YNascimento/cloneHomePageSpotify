@@ -1,0 +1,137 @@
+html, body, .capa{
+	height: 100%;
+	overflow: auto;
+}
+
+body{
+    background: rgb(80, 155, 245);
+}
+
+header{
+    margin-bottom: 60px;
+}
+
+nav.bg-transparente{
+	padding: 15px 0px;
+	background:	rgba(0,0,0,0.8);
+}
+
+/*Barra de navegação*/
+.img-logo{
+	height:40px; 
+	width:132px;
+	background: url('imagens/spotify.svg') no-repeat;
+	display: block;
+	background-size: contain;
+	color: transparent;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin-right: 17px;
+	margin-left: 17px;
+	margin-top: auto;
+	margin-bottom:auto;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-weight: 700;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: black;
+}
+
+.imgCapa{
+    margin-top: 100px;
+    float: right;
+    width: auto;
+    height: 500px;
+    position: sticky;
+}
+
+
+.tituloCapa{
+    margin-top: 150px;
+    font-weight: 700;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 78px;
+    color: white;
+    text-size-adjust: 100%;
+    line-height: 96px;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.subtituloCapa{
+    font-weight: 750;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    text-size-adjust: 100%;
+    line-height: 96px;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.btnCapa{
+    color:white;
+    background: rgb(29, 185, 84);
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 12px 48px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: +0.07em;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.btnCapa:hover{
+    background:  rgb(46, 218, 106);
+    font-size: 16px;
+    color: white;
+    padding: 13px 49px;
+    transform: scale(1.03,1.03);
+    align-content: center;
+
+}
+
+.footerCapa{
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    padding-bottom: 50px;
+}
+
+#condicoesLink{
+    color: white;
+    text-decoration: underline;
+}
+
+#beneficios{
+    padding-top: 100px;
+    background: white;
+}
+
+#tituloBeneficios{
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 800;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    color: rgb(34, 35, 38);
+    padding-bottom: 60px;
+}
+
+.imgBeneficios{
+    width: 142px;
+    height: 142px;
+    padding: 10px;
+    margin: 40px 71px;
+    display: block;
+}
