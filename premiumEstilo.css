@@ -115,6 +115,7 @@ nav.bg-transparente{
 
 #beneficios{
     padding-top: 100px;
+    padding-bottom: 100px;
     background: white;
 }
 
@@ -131,7 +132,52 @@ nav.bg-transparente{
 .imgBeneficios{
     width: 142px;
     height: 142px;
-    padding: 10px;
-    margin: 40px 71px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.texto1Beneficios{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 800;
+    margin-top: 40px;
+}
+.texto2Beneficios{
+    text-align: center;
+    font-size: 16px;
+}
+
+#cancele{
+    background: rgb(240,240,240);
+    box-sizing: border-box;
     display: block;
+    padding-top:35px;
+    padding-bottom:50px;
+}
+
+.imgCancele{
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tituloCancele{
+    margin-top:40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 900;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+
+.textoCancele{
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
 }
