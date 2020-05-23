@@ -4,7 +4,7 @@ html, body, .capa{
 }
 
 body{
-    background: rgb(80, 155, 245);
+    background:rgb(80, 155, 245);
 }
 
 header{
@@ -180,4 +180,197 @@ nav.bg-transparente{
     font-size: 24px;
     font-weight: 500;
     color: black;
+}
+
+#planos{
+    background: white;
+    padding: 75px 15px;
+}
+
+#tituloPlanos{
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 700;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    letter-spacing: -1.6px;
+    color: rgb(34, 35, 38);
+}
+
+#subtituloPlanos{
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0px;
+    margin-bottom: 60px;
+    color: rgb(34, 35, 38);
+}
+
+.bordaLinhaTitulos{
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    /*box-shadow: rgb(255, 255, 255) 0px 2.2px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 3px;*/
+    border-top:2.5px solid rgba(120, 120, 120, 0.5);
+    border-left:2.5px solid rgba(120, 120, 120, 0.5);
+    border-right:2.5px solid rgba(120, 120, 120, 0.5);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+}
+
+.caixaIntroPlanos{
+    position: relative;
+    display: block;
+}
+
+.p3mesesPlanos{
+    background: rgb(63, 158, 215);
+    color: white;
+    border-radius: 3px;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    text-align: left;
+    display: inline-block;
+
+}
+
+.tipoPlanos{
+    box-sizing: border-box;
+    margin: 0px 0px 5px;
+    text-align: left;
+    font-weight: bold;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgb(34, 35, 38);
+}
+
+.descricaoPlanos{
+    box-sizing: border-box;
+    display: block;
+    margin: 0px 0px 2px;
+    text-align: left;
+    font-weight: 400;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222326;
+}
+
+.qtdcontasPlanos{
+    box-sizing: border-box;
+    display: block;
+    margin: 0px 0px 20px;
+    text-align: left;
+    font-weight: 400;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222326;
+}
+
+.conteudoPlanos{
+    /*box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+    box-shadow: rgb(255, 255, 255) 0px -4px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 3px;*/
+    border-left:2.5px solid rgba(120, 120, 120, 0.5);
+    border-right:2.5px solid rgba(120, 120, 120, 0.5);
+    
+}
+
+.ulPlanos{
+    margin: 0px 0px 20px;
+    text-align: left;
+    font-weight: 400;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222326;
+    list-style-position: outside;
+    list-style-type: unset;
+
+    
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+.buttonPlanos{
+    /*position: absolute;
+    display: inline-block;
+    bottom:0px;
+    box-shadow: rgb(255, 255, 255) 0px -5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 3px;*/
+    border-left:2.5px solid rgba(120, 120, 120, 0.5);
+    border-right:2.5px solid rgba(120, 120, 120, 0.5);
+}
+
+.termosPlanos{
+    /*position: absolute;
+    display: inline-block;
+    bottom:0px;
+    box-shadow: rgb(255, 255, 255) 0px -5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 3px;*/
+    border-bottom:2.5px solid rgba(120, 120, 120, 0.5);
+    border-left:2.5px solid rgba(120, 120, 120, 0.5);
+    border-right:2.5px solid rgba(120, 120, 120, 0.5);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.btnPlanos{
+    color:white;
+    background: rgb(29, 185, 84);
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 12px 48px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.33s;
+    width: 100%;
+}
+
+.btnPlanos:hover{
+    background:  rgb(46, 218, 106);
+    font-size: 16px;
+    color: white;
+    padding: 13px 49px;
+    transform: scale(1.03,1.03);
+    align-content: center;
+
+}
+
+.termoscondicoesPlanos{
+    color: rgb(145, 148, 150);
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin: .5em 0 1em;
+    padding: 20px 16px 16px;
+    margin: 0px 16px 0px 0px;
+    display: inline-block;
+
+}
+
+.linkTermosCondicoes{
+    color: rgb(145, 148, 150);
+    text-decoration: underline;
 }
