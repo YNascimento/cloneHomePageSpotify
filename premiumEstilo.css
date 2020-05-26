@@ -1,6 +1,6 @@
 html, body, .capa{
 	height: 100%;
-	overflow: auto;
+	/*overflow: scroll;*/
 }
 
 body{
@@ -11,10 +11,7 @@ header{
     margin-bottom: 60px;
 }
 
-nav.bg-transparente{
-	padding: 15px 0px;
-	background:	rgba(0,0,0,0.8);
-}
+
 
 /*Barra de navegação*/
 .img-logo{
@@ -29,19 +26,40 @@ nav.bg-transparente{
 .divisor{
 	width: 1px;
 	height: 16px;
-	background: white;
+	background: black;
 	margin-right: 17px;
 	margin-left: 17px;
 	margin-top: auto;
 	margin-bottom:auto;
 }
 
+.divisor.scrolled{
+    background: white;
+    transition: 0.75s;
+}
+
 .navbar-dark .navbar-nav .nav-link{
+    color: black;
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link.scrolled{
     color: white;
     font-weight: 700;
 }
-.navbar-dark .navbar-nav .nav-link:hover{
-	color: black;
+
+.navbar-dark .navbar-nav .nav-link.scrolled:hover{
+    color: #1DB954;
+}
+
+.bg-transparente{
+    transition: 0.75s;
+    background: transparent;
+}
+
+.bg-transparente.scrolled{
+    transition: 0.75s;
+    background-color: rgba(26, 24, 26, 0.8);
 }
 
 .imgCapa{
@@ -182,6 +200,8 @@ nav.bg-transparente{
     color: black;
 }
 
+/********** PLANOS **************/
+
 #planos{
     background: white;
     padding: 75px 15px;
@@ -208,32 +228,60 @@ nav.bg-transparente{
     color: rgb(34, 35, 38);
 }
 
+.gridPlanos{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(150px,auto);
+    column-gap: 15px;
+}
+
+/********Estilo Bordas Planos*********/
+
 .bordaLinhaTitulos{
     border-radius: 10px;
     padding-top: 12px;
     padding-right: 12px;
     padding-bottom: 0px;
     padding-left: 12px;
-    /*box-shadow: rgb(255, 255, 255) 0px 2.2px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 3px;*/
-    border-top:2.5px solid rgba(120, 120, 120, 0.5);
-    border-left:2.5px solid rgba(120, 120, 120, 0.5);
-    border-right:2.5px solid rgba(120, 120, 120, 0.5);
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    box-shadow: rgb(255, 255, 255) 0px 10px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 6px;
 
     box-sizing: border-box;
     display: inline-block;
     position: relative;
 }
 
-.caixaIntroPlanos{
-    position: relative;
-    display: block;
+.bordaDescricaoPlanos{
+    padding-top:15px;
+    box-shadow: rgb(255, 255, 255) 0px -9px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 6px;
+    /*border-left:2.5px solid rgba(120, 120, 120, 0.5);
+    border-right:2.5px solid rgba(120, 120, 120, 0.5);*/
 }
 
-.p3mesesPlanos{
+.bordaBtnPlanos{
+    /*position: absolute;
+    display: inline-block;*/
+    box-shadow: rgb(255, 255, 255) 0px 10px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+    z-index: 3;
+}
+
+.bordaTermosPlanos{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    box-shadow: rgb(255, 255, 255) 0px -50px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 6px;
+    z-index: 2;
+}
+
+/**************** estilo texto linha 1 Planos  *******************/
+
+.btn3mesesPlanos{
     background: rgb(63, 158, 215);
     color: white;
     border-radius: 3px;
@@ -247,7 +295,7 @@ nav.bg-transparente{
 
 }
 
-.tipoPlanos{
+.nomePlanos{
     box-sizing: border-box;
     margin: 0px 0px 5px;
     text-align: left;
@@ -282,16 +330,10 @@ nav.bg-transparente{
     color: #222326;
 }
 
-.conteudoPlanos{
-    /*box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
-    box-shadow: rgb(255, 255, 255) 0px -4px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 3px;*/
-    border-left:2.5px solid rgba(120, 120, 120, 0.5);
-    border-right:2.5px solid rgba(120, 120, 120, 0.5);
-    
-}
-
+/************ Estilo descrição dos planos  ****************/
 .ulPlanos{
-    margin: 0px 0px 20px;
+    margin: 0px 0px 0px;
+    padding-bottom: 30px;
     text-align: left;
     font-weight: 400;
     font-family: Circular, Helvetica, Arial, sans-serif;
@@ -307,26 +349,7 @@ nav.bg-transparente{
     position: relative;
 }
 
-.buttonPlanos{
-    /*position: absolute;
-    display: inline-block;
-    bottom:0px;
-    box-shadow: rgb(255, 255, 255) 0px -5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 3px;*/
-    border-left:2.5px solid rgba(120, 120, 120, 0.5);
-    border-right:2.5px solid rgba(120, 120, 120, 0.5);
-}
-
-.termosPlanos{
-    /*position: absolute;
-    display: inline-block;
-    bottom:0px;
-    box-shadow: rgb(255, 255, 255) 0px -5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 3px;*/
-    border-bottom:2.5px solid rgba(120, 120, 120, 0.5);
-    border-left:2.5px solid rgba(120, 120, 120, 0.5);
-    border-right:2.5px solid rgba(120, 120, 120, 0.5);
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
+/**********   Estilo Botão "começar" Planos******************/
 
 .btnPlanos{
     color:white;
@@ -341,21 +364,28 @@ nav.bg-transparente{
 	font-weight: 700;
 	letter-spacing: 2px;
     font-size: 14px;
-    transition: all 0.33s;
+    transition: all 0.2s;
     width: 100%;
 }
 
 .btnPlanos:hover{
     background:  rgb(46, 218, 106);
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     padding: 13px 49px;
-    transform: scale(1.03,1.03);
+    transform: scale(1.02,1.02);
     align-content: center;
 
 }
 
-.termoscondicoesPlanos{
+/********** Estilo Termos e condições ***************/
+
+.linkTermosPlanos{
+    color: rgb(145, 148, 150);
+    text-decoration: underline;
+}
+
+.textoTermosPlanos{
     color: rgb(145, 148, 150);
     font-family: Circular, Helvetica, Arial, sans-serif;
     box-sizing: border-box;
@@ -370,7 +400,69 @@ nav.bg-transparente{
 
 }
 
-.linkTermosCondicoes{
-    color: rgb(145, 148, 150);
-    text-decoration: underline;
+/*******MEDIA POR TAMANHO DE SCREEN**********/
+
+@media screen and (max-width: 992px){
+    
+    .gridPlanos{
+        display: grid;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(50px,auto);
+        column-gap: 10px;
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .bordaLinhaTitulos{
+        border-radius: 10px;
+        padding-top: 12px;
+        padding-right: 12px;
+        padding-bottom: 0px;
+        padding-left: 12px;
+        box-shadow: rgb(255, 255, 255) 0px 10px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 6px;
+    
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        margin-top: 15px;
+    }
+
+}
+
+
+/******* SCREEN SIZES************/
+
+@media screen and (max-width: 992px){
+	.bg-transparente{
+        background-color: black;
+        transition: 0s;
+    }
+    .bg-transparente.scrolled{
+        transition: 0s;
+        background-color: black;
+    }
+    .divisor{
+        width: 0px;
+        height: 0px;
+        background: white;
+        margin-right: 17px;
+        margin-left: 17px;
+        margin-top: auto;
+        margin-bottom:auto;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link{
+        color: white;
+        font-weight: 700;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover{
+        color: #1DB954;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.scrolled{
+        color: white;
+        font-weight: 700;
+    }   
 }
