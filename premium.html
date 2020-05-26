@@ -7,15 +7,17 @@
     <title>Spotify</title>
     <link rel="icon" href="imagens/favicon.png">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="premiumEstilo.css" rel="stylesheet">
-
+    
 </head>
 <body>
     <!--BARRA DE NAVEGAÇÃO
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top bg-transparente">  -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top bg-transparente">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-transparente">
 
         <div class="container">
 
@@ -50,7 +52,7 @@
 
     <!-- CAPA -->
     <!--<img src="imagens/premium_dancer.png" class="img-responsive d-block imgCapa"/>-->
-    <img src="imagens/premium_dancer.png" class="img-responsive d-block imgCapa"/>
+    <img src="imagens/premium_dancer.png" class="img-responsive d-none d-lg-block imgCapa"/>
     <div class="container">
         <section>
             <article>
@@ -132,169 +134,120 @@
             <h2 id="tituloPlanos">Escolha seu plano Premium</h2>
             <h3 id="subtituloPlanos">Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</h3>
 
-            <!--Linha titulos planos-->
-            <div class="row">
-                <div class="col-3 bordaLinhaTitulos">
-                    <p class="p3mesesPlanos">3 meses grátis</p>
-                    <h3 class="tipoPlanos">Individual</h3>
+            <div class="gridPlanos"><!--PLANOS-->
+
+                <!--PLANO1-->
+                <div class="bordaLinhaTitulos"> 
+                    <p class="btn3mesesPlanos">3 meses grátis</p>
+                    <h3 class="nomePlanos">Individual</h3>
                     <p class="descricaoPlanos">R$ 16,90/mês após o período da oferta</p>
                     <p class="qtdcontasPlanos">1 conta</p>
                     <hr>
                 </div>
-
-                <div class="col-3 bordaLinhaTitulos">
-                    <p class="p3mesesPlanos">3 meses grátis</p>
-                    <h3 class="tipoPlanos">Duo</h3>
+                
+                <ul class="ulPlanos bordaDescricaoPlanos">
+                    <li>Curta música sem anúncios</li>
+                    <li>Ouça em qualquer lugar — até offline</li>
+                    <li>Toque o que quiser</li>
+                    <li>Curta música sem anúncios</li>
+                    <li>Ouça em qualquer lugar — até offline</li>
+                    <li>Toque o que quiser</li>
+                </ul>
+                
+                <div class="bordaBtnPlanos">
+                    <a href="#" class="btn btnPlanos btn-lg">Começar</a>
+                </div>
+                <div class="textoTermosPlanos bordaTermosPlanos">
+                    <p>
+                        O período de 3 meses grátis não está disponível para usuários que já experimentaram o Premium. 
+                        <a href="#" class="linkTermosPlanos">Sujeito a Termos e condições</a>. Válido até 30 de jun de 2020.
+                    </p>
+                </div>  <!--PLANO1-->
+                
+                <!--PLANO2-->
+                <div class="bordaLinhaTitulos"> 
+                    <p class="btn3mesesPlanos">3 meses grátis</p>
+                    <h3 class="nomePlanos">Duo</h3>
                     <p class="descricaoPlanos">Depois, pague apenas R$ 21,90/mês</p>
                     <p class="qtdcontasPlanos">2 contas</p>
                     <hr>
                 </div>
+                <ul class="ulPlanos bordaDescricaoPlanos">
+                        <li>2 contas Premium para um casal que mora junto</li>
+                        <li>Duo Mix: uma playlist só pra vocês, atualizada regularmente com músicas que os dois gostam</li>
+                        <li>Ouça sem anúncio, no modo offline e sob demanda</li>
+                </ul>
+                <div class="bordaBtnPlanos">
+                    <a href="#" class="btn btnPlanos btn-lg">Começar</a>
+                </div>
+                <div class="textoTermosPlanos bordaTermosPlanos">
+                    <p>
+                        Oferta indisponível para usuários que já experimentaram o Premium. 
+                        <a href="#" class="linkTermosPlanos">Sujeito a Termos e condições</a>. Válido até 30 de jun de 2020.
+                    </p>
+                </div> <!--PLANO2-->
 
-                <div class="col-3 bordaLinhaTitulos">
-                    <p class="p3mesesPlanos">3 meses grátis</p>
-                    <h3 class="tipoPlanos">Família</h3>
+                <!--PLANO3-->
+                <div class="bordaLinhaTitulos"> 
+                    <p class="btn3mesesPlanos">3 meses grátis</p>
+                    <h3 class="nomePlanos">Família</h3>
                     <p class="descricaoPlanos">R$ 26,90/mês após o período da oferta</p>
                     <p class="qtdcontasPlanos">6 contas</p>
                     <hr>
                 </div>
-
-                <div class="col-3 bordaLinhaTitulos">
-                    <p class="p3mesesPlanos">3 meses grátis</p>
-                    <h3 class="tipoPlanos">Universitário</h3>
+                <ul class="ulPlanos bordaDescricaoPlanos">
+                    <li>6 contas Premium ou Kids para familiares que moram no mesmo endereço</li>
+                    <li>Family Mix: uma playlist pra família, atualizada regularmente com músicas que todo mundo gosta</li>
+                    <li>Spotify Kids: um aplicativo especial para crianças de até 12 anos</li>
+                    <li>Bloqueie música explícita</li>
+                    <li>Ouça sem anúncio, no modo offline e sob demanda</li>
+                </ul>
+                <div class="bordaBtnPlanos">
+                    <a href="#" class="btn btnPlanos btn-lg">Começar</a>
+                </div>
+                <div class="textoTermosPlanos bordaTermosPlanos">
+                    <p>
+                        Oferta indisponível para usuários que já experimentaram o Premium. 
+                        <a href="#" class="linkTermosPlanos">Sujeito a Termos e condições</a>. Válido até 30 de jun de 2020.
+                    </p>
+                </div> <!--PLANO3-->
+                
+                <!--PLANO4-->
+                <div class="bordaLinhaTitulos"> 
+                    <p class="btn3mesesPlanos">3 meses grátis</p>
+                    <h3 class="nomePlanos">Universitário</h3>
                     <p class="descricaoPlanos">R$ 8,50/mês após o período da oferta</p>
                     <p class="qtdcontasPlanos">1 conta</p>
                     <hr>
                 </div>
+                <ul class="ulPlanos bordaDescricaoPlanos">
+                    <li>Desconto especial para estudantes universitários que tenham direito à oferta</li>
+                    <li>Curta música sem anúncios</li>
+                    <li>Ouça em qualquer lugar — até offline</li>
+                    <li>Toque o que quiser</li>
+                </ul>
+                <div class="bordaBtnPlanos">
+                    <a href="#" class="btn btnPlanos btn-lg">Começar</a>
+                </div>
+                <div class="textoTermosPlanos bordaTermosPlanos">
+                    <p>
+                        Plano destinado exclusivamente a estudantes universitários de instituições de ensino superior aprovadas. 
+                        Oferta indisponível para usuários que já experimentaram o Premium.
+                        <a href="#" class="linkTermosPlanos">Sujeito a Termos e condições</a>. Válido até 30 de jun de 2020.
+                    </p>
+                </div> <!--PLANO4-->
+                
 
             </div>
-
-            <!--CONTEUDO PLANOS-->
-            <div class="row">
-
-                <div class="col-3 conteudoPlanos"> <!-- plano 1-->
-                    <ul class="ulPlanos">
-                        <li>Curta música sem anúncios</li>
-                        <li>Ouça em qualquer lugar — até offline</li>
-                        <li>Toque o que quiser</li>
-                        <li>Curta música sem anúncios</li>
-                        <li>Ouça em qualquer lugar — até offline</li>
-                        <li>Toque o que quiser</li>
-                    </ul>
-                </div>
-
-                <div class="col-3 conteudoPlanos"><!-- plano 2-->
-                    <ul class="ulPlanos">
-                        <li>2 contas Premium para um casal que mora junto</li>
-                        <li>Duo Mix: uma playlist só pra vocês, atualizada regularmente com músicas que os dois gostam</li>
-                        <li>Ouça sem anúncio, no modo offline e sob demanda</li>
-                    </ul>
-                </div>
-
-                <div class="col-3 conteudoPlanos"><!-- plano 3-->
-                    <ul class="ulPlanos">
-                        <li>6 contas Premium ou Kids para familiares que moram no mesmo endereço</li>
-                        <li>Family Mix: uma playlist pra família, atualizada regularmente com músicas que todo mundo gosta</li>
-                        <li>Spotify Kids: um aplicativo especial para crianças de até 12 anos</li>
-                        <li>Bloqueie música explícita</li>
-                        <li>Ouça sem anúncio, no modo offline e sob demanda</li>
-                    </ul>
-                </div>
-
-                <div class="col-3 conteudoPlanos"><!-- plano 4-->
-                    <ul class="ulPlanos">
-                        <li>Desconto especial para estudantes universitários que tenham direito à oferta</li>
-                        <li>Curta música sem anúncios</li>
-                        <li>Ouça em qualquer lugar — até offline</li>
-                        <li>Toque o que quiser</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!--Botões Começar planos-->
-            <div class="row">
-
-                <div class="col-3 buttonPlanos">
-                    <div>
-                        <a href="#" class="btn btnPlanos btn-lg">Começar</a>
-                    </div>
-
-                </div>
-
-                <div class="col-3 buttonPlanos">
-                    <div>
-                        <a href="#" class="btn btnPlanos btn-lg">Começar</a>
-                    </div>
-
-                </div>
-
-                <div class="col-3 buttonPlanos">
-                    <div>
-                        <a href="#" class="btn btnPlanos btn-lg">Começar</a>
-                    </div>
-                         
-                </div>
-
-                <div class="col-3 buttonPlanos">
-                    <div>
-                        <a href="#" class="btn btnPlanos btn-lg">Começar</a>
-                    </div>
-                        
-                </div>
-
-            </div>
-
-            <!--termos e condições planos-->
-            <div class="row">
-
-                <div class="col-3 termosPlanos">
-                    <div class="termoscondicoesPlanos">
-                        <p>
-                            O período de 3 meses grátis não está disponível para usuários que já experimentaram o Premium. 
-                            <a href="#" class="linkTermosCondicoes">Sujeito a Termos e condições</a>. Válido até 30 de jun de 2020.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-3 termosPlanos">
-                    <div class="termoscondicoesPlanos">
-                        <p>
-                            Oferta indisponível para usuários que já experimentaram o Premium. 
-                            <a href="#" class="linkTermosCondicoes">Sujeito a Termos e condições</a>. Válido até 30 de jun de 2020.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-3 termosPlanos">
-                    <div class="termoscondicoesPlanos">
-                        <p>
-                            Oferta indisponível para usuários que já experimentaram o Premium. 
-                            <a href="#" class="linkTermosCondicoes">Sujeito a Termos e condições</a>. Válido até 30 de jun de 2020.
-                        </p>
-                    </div> 
-                </div>
-
-                <div class="col-3 termosPlanos">
-                    <div class="termoscondicoesPlanos">
-                        <p>
-                            Plano destinado exclusivamente a estudantes universitários de instituições de ensino superior aprovadas. 
-                            Oferta indisponível para usuários que já experimentaram o Premium.
-                            <a href="#" class="linkTermosCondicoes">Sujeito a Termos e condições</a>. Válido até 30 de jun de 2020.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
 
         </article>
     </section>
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins)  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="premium.js"></script>
 
 </body>
 </html>
