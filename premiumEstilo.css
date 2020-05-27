@@ -431,6 +431,66 @@ header{
 
 }
 
+/********* RODAPÉ ************/
+
+#rodape{
+    padding: 30px 0px 20px;
+    background-color: black;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+}
+
+/*html, body, footer, .row{
+    margin: 0px;
+    padding: 0px;
+}*/
+
+.liRodape{
+    padding:1em;
+    font-weight: 500;
+    font-size: 12px;
+    color: #919496;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.linkRodape{
+    color: #919496;
+}
+
+.linkRodape:hover{
+    transition: 0.1s;
+    color: #222326;
+    text-decoration: none;
+}
+
+.paisRodape{
+    color: #919496;
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    display: block;
+    text-align: right;
+    font-weight: 500;
+    font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
+    line-height: 1.5;
+}
+
+.copyright{
+    color: #919496;
+    font-size: 12px;
+    padding: 1em 0;
+    display: block;
+    text-align: right;
+    font-weight: 600;
+    font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
+    line-height: 1.5;
+
+}
+
 
 /******* SCREEN SIZES************/
 
