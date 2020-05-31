@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="imagens/favicon.png">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="ajudaEstilo.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b5d13338b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!--BARRA DE NAVEGAÇÃO-->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-preto">
+
+        <div class="container">
+
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">
+            <span class="img-logo">Spotify</span>
+            </a>
+          </div>
+
+            <button 
+              class="navbar-toggler ml-auto"
+              type="button" 
+              data-toggle="collapse"
+              data-target="#barraNav">
+              <span class="sr-only">Alternar Menu</span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+          <div class="collapse navbar-collapse" id="barraNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Premium</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Ajuda</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Baixar</a></li>
+              <li class="divisor" role="separator"></li>
+              <li class="nav-item"><a class="nav-link" href="#">Inscrever-se</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Entrar</a></li>
+            </ul>
+          </div>
+
+        </div>
+    </nav> <!--BARRA DE NAVEGAÇÃO-->
+
+    <!--Sessão de busca-->
+    <section id="sectionBusca" class="container" style="margin-top: 90px;">
+      <div class="row rowBusca">
+
+        <div class="col-2"></div>
+
+        <div class="col-8">
+          <div class="container divBusca">
+
+            <h1 class="h1Busca">
+                Como podemos ajudar?
+            </h1>
+  
+            <div class="input-group input-group-lg divInputBusca">
+              <input id="inputBusca" class="form-control" type="text" placeholder="Buscar">
+              <!--<span><i class="fas fa-search"></i></span>-->
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <div class="container linksContainerBusca">
+        <div class="row">
+          <div class="col-4 linkbox-Busca">
+              <h3 class="linkboxBusca-h3">Opções de assinatura</h3>
+              <a href="#" class="linkboxBusca-a">Premium Família </a>
+          </div>
+          
+          <div class="col-4 linkbox-Busca">
+              <h3 class="linkboxBusca-h3">Ajuda com a conta</h3>
+              <a href="#"class="linkboxBusca-a"> Não consigo fazer login </a>
+          </div>
+
+          <div class="col-4 linkbox-Busca">
+              <h3 class="linkboxBusca-h3">Ajuda com a conta</h3>
+              <a href="#"class="linkboxBusca-a">Redefinir Sua Senha </a>
+          </div>
+
+        </div>
+      </div>
+      
+    </section><!--Sessão de busca-->
+
+    <!--links uteis-->
+    <section id="sectionLinksUteis">
+    
+      <div class="container">
+        <div class="row">
+          
+          <div class="offset-sm-1 col-sm-10">
+            <div class="row linksUteis-row">
+              
+              <div class="col-sm-4">
+                <h3 class="linksUteis-list-h3">
+                  Conta e pagamento 
+                </h3>
+                <ul class="linksUteis-list-ul">
+                  <li class="linksUteis-list-li"> 
+                    <a href="#" class="linksUteis-list-li-a">Ajuda com a conta</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Ajuda com pagamentos</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Opções de assinatura</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Premium Familiar</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Premium Duo</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Premium Universitário</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Privacidade e Segurança</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Para Anunciantes</a>
+                  </li>
+                </ul>
+                <a href="#" class="linksUteis-a">Mostrar tudo</a>
+              </div>
+
+              <div class="col-sm-4">
+                <h3 class="linksUteis-list-h3">
+                  Usando o Spotify
+                </h3>
+                <ul class="linksUteis-list-ul">
+                  <li class="linksUteis-list-li"> 
+                    <a href="#" class="linksUteis-list-li-a">Tutoriais em Vídeo</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Primeiros Passos</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Playlists</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Recursos</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Sistema e Configurações</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Solução de Problemas</a>
+                  </li>
+                </ul>
+                <a href="#" class="linksUteis-a">Mostrar tudo</a>
+              </div>
+
+              <div class="col-sm-4">
+                <h3 class="linksUteis-list-h3">
+                  Ouça onde quiser
+                </h3>
+                <ul class="linksUteis-list-ul">
+                  <li class="linksUteis-list-li"> 
+                    <a href="#" class="linksUteis-list-li-a">Alto-falantes</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">TVs</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Carros</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Video Games</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Smart Watches</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Smart Displays</a>
+                  </li>
+
+                  <li class="linksUteis-list-li">
+                    <a href="#" class="linksUteis-list-li-a">Assistentes de Voz</a>
+                  </li>
+                </ul>
+                <a href="#" class="linksUteis-a">Mostrar tudo</a>
+              
+              </div>
+
+            </div><!-- row -->
+          </div><!-- offset-sm-1 col-sm-10 -->
+          
+        </div> <!--row -->   
+      </div> <!--container-->   
+    
+    </section><!--links uteis-->   
+
+    <!--Visite Comunidade-->
+    <section id="sectionComunidade">
+      <div class="container">
+
+        <div class="row rowComunidade">
+          <h1 class="comunidade-h1">Visite a Comunidade</h1>
+
+          <div class="offset-xs-1 col-xs-10 offset-sm-3 col-sm-6 div-p-comunidade">
+            <p class="comunidade-p">Tem uma pergunta? Encontre respostas na nossa Comunidade de fãs especialistas do mundo todo!</p>
+          </div>
+          
+          <div class="offset-xs-1 col-xs-10 offset-sm-3 col-sm-6">
+            <p class="comunidade-p">3339 membros online agora. </p>
+          </div>
+          
+        </div>
+        <div style="text-align: center;">
+          <a href="#" class="btn btnComunidade">ENCONTRAR RESPOSTAS</a>
+        </div>
+        
+
+      </div>
+    </section><!--Visite Comunidade-->
+
+    <!--Recursos-->
+    <section id="sectionRecursos">
+
+    </section><!--Recursos-->
+    
+    <!--entre no spotify-->
+    <section id="sectionEntre">
+
+    </section><!--entre no spotify-->
+
+    <!--Rodapé-->
+    <footer>
+
+    </footer>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
