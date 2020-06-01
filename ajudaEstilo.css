@@ -243,7 +243,6 @@
 	box-sizing: border-box;
 	margin-right: auto;
 	margin-left: auto;
-	
 }
 
 .div-p-comunidade{
@@ -283,3 +282,242 @@
 	color: #fff;
 	text-decoration: none;
 }
+
+#sectionRecursos{
+	background: linear-gradient(90deg,#ed2931 0,#f95a3e);
+	font-family: Circular,Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	display: block;
+	color: #fff;
+	box-sizing: border-box;
+	line-height: 1.5;
+}
+
+.recursos-h1{
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 75px;
+	width: 80%;
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: -0.03em;
+	line-height: 58px;
+	padding: 0px;
+	text-align: center;
+	font-family: inherit;
+	color: inherit;
+}
+
+.recursos-h3{
+	margin: 0px;
+	margin-bottom: 35px;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-bottom: 1px solid hsla(0,0%,100%,.5);
+	letter-spacing: 0.1em;
+	line-height: 1.4px;
+	padding: 24px 0px 16px;
+	font-family: inherit;
+	color: inherit;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.recursos-h2{
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 13px;
+	font-size: 28px;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	line-height: 30px;
+	font-family: inherit;
+	color: inherit;
+	box-sizing: border-box;
+}
+
+.recursos-p{
+	margin: .5em 0 1em;
+	text-align: left;
+	padding-right: 26px;
+	font-weight: 500;
+}
+
+.recursos-a{
+	margin-bottom: 50px;
+	display: inline-block;
+	letter-spacing: 0.1em;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-bottom:1px solid;
+	font-weight: 550;
+	color: white;
+}
+
+.recursos-a:hover{
+	text-decoration: none;
+	border-bottom:1px solid black;
+	color: black;
+}
+
+#sectionEntre{
+	color:#222326;
+	line-height: 1.5;
+	font-family: Circular,Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.entre-row{
+	padding: 84px 0;
+}
+
+.entre-h1{
+	letter-spacing: -0.03em;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 58px;
+	font-family: inherit;
+	padding: 0px;
+	margin: 16px 0px 30px;
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.divBtnEntre{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+.btnEntre{
+	border-radius: 500px;
+	background-color: #2d46b9;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	position: relative;
+	text-transform:uppercase ;
+	padding: 12px 48px 16px;
+	margin-top: 40px;
+	box-sizing: border-box;
+	letter-spacing: 2px;
+	vertical-align: middle;
+	transition: 0.2s;
+}
+
+.btnEntre:hover{
+	background-color: #1e3264;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*********** FOOTER **************/
+
+#rodape{
+	padding: 80px 0px 50px;
+	background-color: black;
+	font-family: Circular, Helvetica, Arial, sans-serif;
+}
+
+.footer-row2{
+	margin-top: 100px;
+}
+
+.footer-h3{
+	margin: 20px 0px;
+	color: #919496;
+	font-size: 11px;
+	font-weight: 900;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	line-height: 1.4;
+	font-family: inherit;
+	box-sizing: border-box;
+}
+
+.footer-ul{
+	padding-left: 0px;
+}
+
+.footer-li1{
+	list-style: none;
+	line-height: 1.5;
+	padding: 0.1875em 0;
+	margin-bottom: .75em;
+
+	font-weight: 500;
+	font-size: 16px;
+	text-align: left;
+	text-decoration: none;
+	background-color: transparent;
+
+	position: relative;
+	box-sizing: border-box;
+}
+
+.footer-li2{
+	padding:1em;
+	padding-left: 0;
+	font-weight: 500;
+	font-size: 12px;
+	color: #919496;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	line-height: 1.5;
+	text-align: left;
+}
+ 
+.linkRodape1{
+	color: #fff;
+}
+    
+.linkRodape1:hover{
+	transition: 0.1s;
+	color: #1DB954;
+	text-decoration: none;
+}
+
+.linkRodape2{
+	color: #919496;;
+}
+    
+.linkRodape2:hover{
+	transition: 0.1s;
+	color: #1DB954;
+	text-decoration: none;
+}
+    
+.paisRodape{
+	color: #919496;
+	font-size: 12px;
+	position: absolute;
+	top: -10px;
+	right: 15px;
+	display: block;
+	text-align: right;
+	font-weight: 500;
+	font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
+	line-height: 1.5;
+}
+    
+.copyright{
+	color: #919496;
+	font-size: 12px;
+	padding: 1em 0;
+	display: block;
+	text-align: right;
+	font-weight: 600;
+	font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
+	line-height: 1.5;
+}
+    
