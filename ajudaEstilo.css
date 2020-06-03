@@ -1,3 +1,5 @@
+/*******BARRA DE NAVEGAÇÃO ***********/
+
 .img-logo{
 	height:40px; 
 	width:132px;
@@ -41,24 +43,27 @@
     position: sticky;
 }
 
+/******** SESSÃO BUSCA *****************/
+
 #sectionBusca{
-	margin-top: 180px;
+	margin-top: 90px;
 	font-family: Circular, Arial, Helvetica,sans-serif;
 
 }
 
 #sectionBusca::before{
 	content: "";
-	background: url(imagens/fundo_ajuda.png) top no-repeat;
+	background: url(imagens/fundo_ajuda_mobile.png) top no-repeat;
 	background-size: 100%;
-	position: absolute;
-	box-sizing: border-box;
-	z-index: -1;
-	display: block;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	height: 100%;
+	position: absolute;
+	box-sizing: border-box;
+	z-index: -1;
+	display: block;
+
 }
 
 .divBusca{
@@ -118,14 +123,12 @@
 	margin-bottom: 30px;
 }
 
-.linksContainerBusca{
-	padding: 30px 10px;
-}
-
 .linkbox-Busca{
-	color: #d9dadc;;
-	text-align: center;
+	color: #d9dadc;
 	font-family: Circular, Helvetica, Arial, sans-serif;
+	position: relative;
+	width: 100%;
+	text-align: center;
 }
 
 .linkboxBusca-h3{
@@ -134,20 +137,16 @@
 	font-weight: 400;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	color: #d9dadc;
 	font-family: inherit;
 }
 
-.linkboxBusca-a{
-	font-size: 18px;
-	font-weight: 400;
-	padding: 0px;
-	line-height: 20px;
-	margin-bottom: 15px;
+.linkboxBusca-a:hover{
+	text-decoration: none;
 	color: white;
-	display: block;
 }
 
-/************************/
+/*********** LINKS UTEIS *************/
 
 #sectionLinksUteis{
 	background: #efefef;
@@ -217,7 +216,11 @@
 	text-decoration: none;
 }
 
-/**************************************/
+/**************** COMUNIDADE  **********************/
+
+#sectionComunidade{
+	background: #fff;
+}
 
 .rowComunidade::before{
 	content: "";
@@ -316,7 +319,7 @@
 	font-weight: 400;
 	text-transform: uppercase;
 	border-bottom: 1px solid hsla(0,0%,100%,.5);
-	letter-spacing: 0.1em;
+	letter-spacing: 0.05em;
 	line-height: 1.4px;
 	padding: 24px 0px 16px;
 	font-family: inherit;
@@ -362,6 +365,8 @@
 	border-bottom:1px solid black;
 	color: black;
 }
+
+/******** SESSÃO ENTRE *****************/
 
 #sectionEntre{
 	color:#222326;
@@ -451,6 +456,28 @@
 .footer-li1{
 	list-style: none;
 	line-height: 1.5;
+	margin-top: 100px;
+}
+
+.footer-h3{
+	margin: 20px 0px;
+	color: #919496;
+	font-size: 11px;
+	font-weight: 900;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	line-height: 1.4;
+	font-family: inherit;
+	box-sizing: border-box;
+}
+
+.footer-ul{
+	padding-left: 0px;
+}
+
+.footer-li1{
+	list-style: none;
+	line-height: 1.5;
 	padding: 0.1875em 0;
 	margin-bottom: .75em;
 
@@ -487,6 +514,10 @@
 	text-decoration: none;
 }
 
+.iconeRedeSocial{
+	margin-right: 15px;
+}
+
 .linkRodape2{
 	color: #919496;;
 }
@@ -520,4 +551,89 @@
 	font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
 	line-height: 1.5;
 }
-    
+
+/*********** MEDIA QUERIES *****************/
+
+@media screen and (max-width: 767px){
+	#sectionBusca{
+		margin-top: 10px;
+	}
+	#sectionBusca::before{
+		background: url(imagens/fundo_ajuda.png) top no-repeat;
+		height: 800px;
+	}
+
+	.h1Busca{
+		font-size: 35px;
+		line-height: 33px;
+	}
+	.rowBusca{
+		margin-bottom: 10px;
+	}
+	.linkboxBusca-a{
+		font-size: 18px;
+		font-weight: 400;
+		padding: 0px;
+		line-height: 20px;
+		margin-bottom: 15px;
+		color: white;
+		display: block;
+		text-align: left;
+	}
+	.linksContainerBusca{
+		padding: 10px 10px;
+		
+	}
+	
+}
+
+@media screen and (min-width: 768px){
+	#sectionBusca{
+		margin-top: 50px;
+	}
+	#sectionBusca::before{
+		background: url(imagens/fundo_ajuda.png) top no-repeat;
+	}
+	.rowBusca{
+		margin-bottom: 20px;
+	}
+	.linkboxBusca-a{
+		font-size: 18px;
+		font-weight: 400;
+		padding: 0px;
+		line-height: 20px;
+		margin-bottom: 15px;
+		color: white;
+		display: block;
+		text-align: left;
+	}
+	.linksContainerBusca{
+		padding: 20px 10px;
+		
+	}
+}
+
+@media screen and (min-width: 992px){
+	#sectionBusca{
+		margin-top: 90px;
+	}
+	.linkboxBusca-a{
+		font-size: 18px;
+		font-weight: 400;
+		padding: 0px;
+		line-height: 20px;
+		margin-bottom: 15px;
+		color: white;
+		display: block;
+		text-align: center;
+	}
+	.linksContainerBusca{
+		padding: 30px 10px;
+		
+	}
+}	
+
+@media screen and (min-width: 1200px){
+
+
+}
