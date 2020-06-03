@@ -52,53 +52,59 @@
         </div>
     </nav> <!--BARRA DE NAVEGAÇÃO-->
 
-    <!--Sessão de busca-->
-    <section id="sectionBusca" class="container" style="margin-top: 90px;">
-      <div class="row rowBusca">
+    <!--SESSÃO BUSCA-->
+    <section id="sectionBusca">
+      <div class="container">
 
-        <div class="col-2"></div>
+        <div class="row rowBusca">
 
-        <div class="col-8">
-          <div class="container divBusca">
-
-            <h1 class="h1Busca">
-                Como podemos ajudar?
-            </h1>
+          <div class="col-lg-8 col-sm-12 offset-lg-2 ">
+            <div class="container divBusca">
   
-            <div class="input-group input-group-lg divInputBusca">
-              <input id="inputBusca" class="form-control" type="text" placeholder="Buscar">
-              <!--<span><i class="fas fa-search"></i></span>-->
-              <div class="input-group-append">
-                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              <h1 class="h1Busca">
+                  Como podemos ajudar?
+              </h1>
+    
+              <div class="input-group input-group-lg divInputBusca">
+                <input id="inputBusca" class="form-control" type="text" placeholder="Buscar">
+                <!--<span><i class="fas fa-search"></i></span>-->
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
               </div>
+              
             </div>
-            
+  
           </div>
-
         </div>
-        <div class="col-2"></div>
-      </div>
+  
+        <div class="container linksContainerBusca">
+          <h3 class="linkboxBusca-h3 d-lg-none d-xl-none">Melhores soluções</h3>
 
-      <div class="container linksContainerBusca">
-        <div class="row">
-          <div class="col-4 linkbox-Busca">
-              <h3 class="linkboxBusca-h3">Opções de assinatura</h3>
-              <a href="#" class="linkboxBusca-a">Premium Família </a>
-          </div>
-          
-          <div class="col-4 linkbox-Busca">
-              <h3 class="linkboxBusca-h3">Ajuda com a conta</h3>
-              <a href="#"class="linkboxBusca-a"> Não consigo fazer login </a>
-          </div>
+          <div class="row">
+            <div class="col-4 linkbox-Busca">
+                <h3 class="linkboxBusca-h3 d-none d-lg-block d-xl-block">Opções de assinatura</h3>
+                <a href="#" class="linkboxBusca-a">Premium Família </a>
+            </div>
 
-          <div class="col-4 linkbox-Busca">
-              <h3 class="linkboxBusca-h3">Ajuda com a conta</h3>
-              <a href="#"class="linkboxBusca-a">Redefinir Sua Senha </a>
-          </div>
+            <div class="w-100 d-lg-none d-xl-none"></div>
 
+            <div class="col-4 linkbox-Busca">
+                <h3 class="linkboxBusca-h3 d-none d-lg-block d-xl-block">Ajuda com a conta</h3>
+                <a href="#"class="linkboxBusca-a"> Não consigo fazer login </a>
+            </div>
+
+            <div class="w-100 d-lg-none d-xl-none"></div>
+
+            <div class="col-4 linkbox-Busca">
+                <h3 class="linkboxBusca-h3 d-none d-lg-block d-xl-block">Ajuda com a conta</h3>
+                <a href="#"class="linkboxBusca-a">Redefinir Sua Senha </a>
+            </div>
+  
+          </div>
         </div>
+
       </div>
-      
     </section><!--Sessão de busca-->
 
     <!--links uteis-->
@@ -111,111 +117,52 @@
             <div class="row linksUteis-row">
               
               <div class="col-sm-4">
-                <h3 class="linksUteis-list-h3">
-                  Conta e pagamento 
-                </h3>
-                <ul class="linksUteis-list-ul">
-                  <li class="linksUteis-list-li"> 
-                    <a href="#" class="linksUteis-list-li-a">Ajuda com a conta</a>
-                  </li>
+                <h3 class="linksUteis-list-h3">Conta e pagamento </h3>
 
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Ajuda com pagamentos</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Opções de assinatura</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Premium Familiar</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Premium Duo</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Premium Universitário</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Privacidade e Segurança</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Para Anunciantes</a>
-                  </li>
+                <ul id="linksUteis-ul1" class="linksUteis-list-ul">
+                  <!--<li class="linksUteis-list-li"> <a href="#" class="linksUteis-list-li-a">Ajuda com a conta</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Ajuda com pagamentos</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Opções de assinatura</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Premium Familiar</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Premium Duo</a></li>
+                  <li class="linksUteis-list-li d-block d-sm-none"><a href="#" class="linksUteis-list-li-a">Premium Universitário</a></li>
+                  <li class="linksUteis-list-li d-block d-sm-none"><a href="#" class="linksUteis-list-li-a">Privacidade e Segurança</a></li>
+                  <li class="linksUteis-list-li d-block d-sm-none"><a href="#" class="linksUteis-list-li-a">Para Anunciantes</a></li>-->
                 </ul>
-                <a href="#" class="linksUteis-a">Mostrar tudo</a>
+
+                <a id="linksUteis-mostra1" href="#" class="linksUteis-a">Mostrar tudo</a>
               </div>
 
               <div class="col-sm-4">
                 <h3 class="linksUteis-list-h3">
                   Usando o Spotify
                 </h3>
-                <ul class="linksUteis-list-ul">
-                  <li class="linksUteis-list-li"> 
-                    <a href="#" class="linksUteis-list-li-a">Tutoriais em Vídeo</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Primeiros Passos</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Playlists</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Recursos</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Sistema e Configurações</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Solução de Problemas</a>
-                  </li>
+                <ul id="linksUteis-ul2" class="linksUteis-list-ul">
+                  <!--<li class="linksUteis-list-li"> <a href="#" class="linksUteis-list-li-a">Tutoriais em Vídeo</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Primeiros Passos</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Playlists</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Recursos</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Sistema e Configurações</a></li>
+                  <li class="linksUteis-list-li  d-block d-sm-none"><a href="#" class="linksUteis-list-li-a">Solução de Problemas</a></li>-->
                 </ul>
-                <a href="#" class="linksUteis-a">Mostrar tudo</a>
+
+                <a id="linksUteis-mostra2" href="#" class="linksUteis-a">Mostrar tudo</a>
               </div>
 
               <div class="col-sm-4">
                 <h3 class="linksUteis-list-h3">
                   Ouça onde quiser
                 </h3>
-                <ul class="linksUteis-list-ul">
-                  <li class="linksUteis-list-li"> 
-                    <a href="#" class="linksUteis-list-li-a">Alto-falantes</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">TVs</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Carros</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Video Games</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Smart Watches</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Smart Displays</a>
-                  </li>
-
-                  <li class="linksUteis-list-li">
-                    <a href="#" class="linksUteis-list-li-a">Assistentes de Voz</a>
-                  </li>
+                <ul id="linksUteis-ul3" class="linksUteis-list-ul">
+                  <!--<li class="linksUteis-list-li"> <a href="#" class="linksUteis-list-li-a">Alto-falantes</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">TVs</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Carros</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Video Games</a></li>
+                  <li class="linksUteis-list-li"><a href="#" class="linksUteis-list-li-a">Smart Watches</a></li>
+                  <li class="linksUteis-list-li d-block d-sm-none"><a href="#" class="linksUteis-list-li-a">Smart Displays</a></li>
+                  <li class="linksUteis-list-li d-block d-sm-none"><a href="#" class="linksUteis-list-li-a">Assistentes de Voz</a></li>-->
                 </ul>
-                <a href="#" class="linksUteis-a">Mostrar tudo</a>
+                <a id="linksUteis-mostra3" href="#" class="linksUteis-a">Mostrar tudo</a>
               
               </div>
 
@@ -253,83 +200,84 @@
 
     <!--Recursos-->
     <section id="sectionRecursos">
-
-      <div class="row">
-        <h1 class="recursos-h1">Como usar os recursos</h1>
-        <div class="offset-sm-3 col-sm-6">
-
-          <div class="row">
-
-            <div class="col-md-6">
-              <h3 class="recursos-h3">começar</h3>
+      <div class="container">
+        <div class="row">
+          <h1 class="recursos-h1">Como usar os recursos</h1>
+          <div class="col-md-12 offset-lg-1 col-lg-10">
+  
+            <div class="row">
+  
+              <div class="col-md-6">
+                <h3 class="recursos-h3">começar</h3>
+              </div>
+              <div class="col-md-6">
+                <h3 class="recursos-h3">E dê uma olhada nestes artigos </h3>
+              </div>
+  
             </div>
-            <div class="col-md-6">
-              <h3 class="recursos-h3">E dê uma olhada nestes artigos </h3>
-            </div>
-
-          </div>
-
-          <div class="row">
-            
-            <div class="col-md-6">
-              <h2 class="recursos-h2">Buscar</h2>
-              <p class="recursos-p">Busque uma música, álbum, artista, selo, gênero, momento, atividade ou amigo no Spotify.</p>
-              <a class="recursos-a" href="#">saiba mais</a>
-            </div>
-            <div class="col-md-6">
-              <h2 class="recursos-h2">Rádio</h2>
-              <p class="recursos-p">Sintonize uma das nossas várias estações ou crie uma baseada na sua música, álbum ou artista favorito.</p>
-              <a class="recursos-a" href="#">saiba mais</a>
-            </div>
-
-          </div>
-
-          <div class="row">
-            
-            <div class="col-md-6">
-              <h2 class="recursos-h2">Playlists</h2>
-              <p class="recursos-p">As playlists são como compilações que você cria no Spotify. Você pode compartilhar, seguir e montar playlists em colaboração com seus amigos.</p>
-              <a class="recursos-a" href="#">saiba mais</a>
-            </div>
-            <div class="col-md-6">
-              <h2 class="recursos-h2">Descobertas da Semana</h2>
-              <p class="recursos-p">Quer saber como conhecer músicas novas? Toda semana, o Spotify monta uma playlist para você baseada no seu gosto, com músicas que talvez você nunca tenha escutado!</p>
-              <a class="recursos-a" href="#">saiba mais</a>
-            </div>
-
-          </div>
-
-          <div class="row">
-            
-            <div class="col-md-6">
-              <h2 class="recursos-h2">Ouça Offline</h2>
-              <p class="recursos-p">Ouça música em qualquer lugar, mesmo sem conexão à Internet! Apenas para assinantes Premium.</p>
-              <a class="recursos-a" href="#">saiba mais</a>
-            </div>
-            <div class="col-md-6">
-              <h2 class="recursos-h2">Spotify no ChromeCast</h2>
-              <p class="recursos-p">Ouça o Spotify pelo seu outro serviço favorito: o Chromecast.</p>
-              <a class="recursos-a" href="#">saiba mais</a>
-            </div>
-
-          </div>
-
-          <div class="row">
-            
-            <div class="col-md-6">
+  
+            <div class="row">
               
+              <div class="col-md-6">
+                <h2 class="recursos-h2">Buscar</h2>
+                <p class="recursos-p">Busque uma música, álbum, artista, selo, gênero, momento, atividade ou amigo no Spotify.</p>
+                <a class="recursos-a" href="#">saiba mais</a>
+              </div>
+              <div class="col-md-6">
+                <h2 class="recursos-h2">Rádio</h2>
+                <p class="recursos-p">Sintonize uma das nossas várias estações ou crie uma baseada na sua música, álbum ou artista favorito.</p>
+                <a class="recursos-a" href="#">saiba mais</a>
+              </div>
+  
             </div>
-            <div class="col-md-6">
-              <h2 class="recursos-h2">Compartilhar</h2>
-              <p class="recursos-p">Compartilhe músicas com amigos e saiba o que eles andam escutando.</p>
-              <a class="recursos-a" href="#">saiba mais</a>
+  
+            <div class="row">
+              
+              <div class="col-md-6">
+                <h2 class="recursos-h2">Playlists</h2>
+                <p class="recursos-p">As playlists são como compilações que você cria no Spotify. Você pode compartilhar, seguir e montar playlists em colaboração com seus amigos.</p>
+                <a class="recursos-a" href="#">saiba mais</a>
+              </div>
+              <div class="col-md-6">
+                <h2 class="recursos-h2">Descobertas da Semana</h2>
+                <p class="recursos-p">Quer saber como conhecer músicas novas? Toda semana, o Spotify monta uma playlist para você baseada no seu gosto, com músicas que talvez você nunca tenha escutado!</p>
+                <a class="recursos-a" href="#">saiba mais</a>
+              </div>
+  
             </div>
-
+  
+            <div class="row">
+              
+              <div class="col-md-6">
+                <h2 class="recursos-h2">Ouça Offline</h2>
+                <p class="recursos-p">Ouça música em qualquer lugar, mesmo sem conexão à Internet! Apenas para assinantes Premium.</p>
+                <a class="recursos-a" href="#">saiba mais</a>
+              </div>
+              <div class="col-md-6">
+                <h2 class="recursos-h2">Spotify no ChromeCast</h2>
+                <p class="recursos-p">Ouça o Spotify pelo seu outro serviço favorito: o Chromecast.</p>
+                <a class="recursos-a" href="#">saiba mais</a>
+              </div>
+  
+            </div>
+  
+            <div class="row">
+              
+              <div class="col-md-6">
+                
+              </div>
+              <div class="col-md-6">
+                <h2 class="recursos-h2">Compartilhar</h2>
+                <p class="recursos-p">Compartilhe músicas com amigos e saiba o que eles andam escutando.</p>
+                <a class="recursos-a" href="#">saiba mais</a>
+              </div>
+  
+            </div>
+  
           </div>
-
         </div>
-      </div>
-      
+
+      </div> <!--Container-->
     </section><!--Recursos-->
     
     <!--entre no spotify-->
@@ -383,13 +331,14 @@
             </ul>
           </div>
           <div class="col">
-            5
+            
           </div>
           <div class="col">
+            <!--<ul class="navbar-nav list-group-horizontal">-->
             <ul class="navbar-nav list-group-horizontal">
-              <li class="iconeRedeSocial ml-auto"><a class="nav-link" href="#"><img src="imagens/facebook.png"></a></li>
-              <li class="iconeRedeSocial"><a class="nav-link" href="#"><img src="imagens/twitter.png"></a></li>
-              <li class="iconeRedeSocial"><a class="nav-link" href="#"><img src="imagens/instagram.png"></a></li>
+              <li class="iconeRedeSocial ml-auto"> <a class="nav-link" href="#"> <img src="imagens/instagram.png"> </a></li>
+              <li class="iconeRedeSocial ml-auto"> <a class="nav-link" href="#"> <img src="imagens/twitter.png"> </a></li>
+              <li class="iconeRedeSocial ml-auto"> <a class="nav-link" href="#"> <img src="imagens/facebook.png"> </a></li>
             </ul>
           </div>
 
@@ -414,6 +363,7 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="ajuda.js"></script>
 
 </body>
 </html>
