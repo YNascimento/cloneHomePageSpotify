@@ -20,7 +20,7 @@ function cols_linksuteis(){
                 var nodetext = document.createTextNode(link);
 
                 if(cont>=5){
-                        liEl.setAttribute("Class","linksUteis-list-li d-block d-sm-none");
+                        liEl.setAttribute("Class","linksUteis-list-li d-block d-md-none");
                 }
                 else liEl.setAttribute("Class","linksUteis-list-li");
                 cont+=1;
@@ -45,7 +45,7 @@ function cols_linksuteis(){
                 var nodetext = document.createTextNode(link);
 
                 if(cont>=5){
-                        liEl.setAttribute("Class","linksUteis-list-li d-block d-sm-none");
+                        liEl.setAttribute("Class","linksUteis-list-li d-block d-md-none");
                 }
                 else liEl.setAttribute("Class","linksUteis-list-li");
 
@@ -70,7 +70,7 @@ function cols_linksuteis(){
                 var nodetext = document.createTextNode(link);
 
                 if(cont>=5){
-                        liEl.setAttribute("Class","linksUteis-list-li d-block d-sm-none");
+                        liEl.setAttribute("Class","linksUteis-list-li d-block d-md-none");
                 }
                 else liEl.setAttribute("Class","linksUteis-list-li");
 
